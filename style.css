@@ -1,0 +1,60 @@
+/* 1. FONT DECLARATIONS */
+@font-face {
+    font-family: 'ItemsTextTrial';
+    src: url('resources/ItemsTextTrial-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABCOracle';
+    src: url('resources/ABCOracle-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABCOracleMedium';
+    src: url('resources/ABCOracle-Medium-Trial.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 2. GLOBAL STYLES */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fafafa;
+    font-family: 'ABCOracle', sans-serif;
+}
+
+canvas {
+    display: block;
+}
+
+/* 3. p5.js UI ELEMENT STYLING */
+input, button, select {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid #000 !important;
+    border-radius: 0px !important; /* Editorial sharp look */
+    padding: 6px 10px;
+    font-family: 'ABCOracleMedium', sans-serif !important;
+    font-size: 11px !important;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+/* 4. UTILITY */
+.hidden { display: none; }
